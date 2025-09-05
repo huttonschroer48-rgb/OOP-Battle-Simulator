@@ -10,7 +10,7 @@ def main():
     hero = Hero("Mega Knight")
 
     # Create goblins ༼ ºل͟º ༽ ༼ ºل͟º ༽ ༼ ºل͟º ༽
-    goblins = [Goblin(f"Goblin {i+1}") for i in range(3)]
+    goblins = [Goblin(f"Goblin {i+1}") for i in range(random.randint(3,4))]
 
     # Keep track of how many goblins were defeated
     defeated_goblins = 0
@@ -53,9 +53,9 @@ def main():
 
     # Final tally of goblins defeated
     print("\nBattle Summary: ")
-    print(f"\nTotal Damage: {HeroDamage} + {GoblinDamage}")
-    print(f"\nRounds Survived:   {Number_Rounds}")
-    print(f"\nTotal goblins defeated: {defeated_goblins} / {len(goblins)}")
+    print(f"\nTotal Damage Dealt: {int(HeroDamage + GoblinDamage)}")
+    print(f"\nRounds Survived: {(Number_Rounds)}")
+    print(f"\nTotal goblins defeated: {(defeated_goblins)} / {(len(goblins))}")
 
 if __name__ == "__main__":
     main()
